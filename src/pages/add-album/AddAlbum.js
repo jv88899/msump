@@ -1,3 +1,9 @@
+import Title from "../../components/title/Title";
+
 export default function AddAlbum() {
-  return <div>Add Album</div>;
+  return (
+    <div>
+      <Title text="Add Album" />
+    </div>
+  );
 }
