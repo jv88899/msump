@@ -2,13 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./App.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import AddAlbum from "./pages/add-album/AddAlbum";
+import ViewAlbum from "./pages/view-album/ViewAlbum";
+
+const router = createBrowserRouter([
+  { path: "/", element: <AddAlbum /> },
+  { path: "/view", element: <ViewAlbum /> },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
