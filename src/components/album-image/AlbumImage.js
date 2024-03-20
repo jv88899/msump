@@ -1,3 +1,3 @@
-export default function AlbumImage() {
-  return <img src={{}} alt="" />;
+export default function AlbumImage({ imageSource }) {
+  return <img src={imageSource} alt="Album Cover" />;
 }
