@@ -11,7 +11,11 @@ export default function AddAlbum() {
         <Description text="Type the album name and click search." />
       </div>
       <Search inputText="Album name..." buttonText="Search" />
-      <AddAlbumList />
+      <AddAlbumList
+        data={[
+          { albumName: "Album 1", artistName: "Artist 1", albumImage: "NA" },
+        ]}
+      />
     </>
   );
 }
